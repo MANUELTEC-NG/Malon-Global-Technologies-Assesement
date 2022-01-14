@@ -1,0 +1,17 @@
+{
+  "name": "malon-global-tech-assessment",
+  "version": "1.0.0",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/styles.css -w"
+  },
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  },
+  "main": "index.js",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  },
+  "author": "Emmanuel Oladipupo",
+  "license": "ISC",
+  "description": ""
+}
