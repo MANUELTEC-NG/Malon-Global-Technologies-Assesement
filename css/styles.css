@@ -59,7 +59,8 @@ html {
         margin: 10px 50px;
         padding: 10px 0;
         font-size: 18px;
-        line-height: 21.09px; }
+        line-height: 21.09px;
+        color: black; }
     .section .login__right {
       background-color: #F4F4F4;
       position: relative; }
@@ -83,6 +84,8 @@ html {
   border-left: 2px solid #3751FE;
   border-radius: 5px;
   margin-bottom: 2px; }
+  .form__group:hover {
+    margin-bottom: 0; }
 
 .form-input {
   padding: 10px;
@@ -103,7 +106,8 @@ html {
     border: none;
     border-bottom: 5px solid orangered; }
   .form-input:hover {
-    border: 3px solid #3751FE; }
+    border: 3px solid #3751FE;
+    margin-bottom: 0; }
 
 .form__email-section {
   font-size: 20px;

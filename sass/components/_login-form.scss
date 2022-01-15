@@ -10,6 +10,10 @@
     border-left: 2px solid $color-heading-primary;
   border-radius: 5px;
     margin-bottom: 2px;
+
+    &:hover{
+      margin-bottom: 0;
+    }
   }
   &-input{
     padding: 10px;
@@ -37,6 +41,7 @@
 
     &:hover{
       border: 3px solid $color-heading-primary;
+      margin-bottom: 0;
     }
 
 
