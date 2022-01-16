@@ -20,35 +20,32 @@ html {
     display: grid;
     grid-template-rows: repeat(1, 1fr);
     grid-template-columns: repeat(2, 1fr);
-    width: 1300px;
     margin: 5px auto; }
-    .section .login-img {
-      background-color: blue; }
     .section .login__left {
       color: white;
       background-color: #ffff;
       margin-left: 5px; }
       .section .login__left--logo {
         display: inline-block;
-        margin-top: 86px;
-        margin-left: 40px;
-        margin-bottom: 86px;
+        margin-top: 8.6rem;
+        margin-left: 4rem;
+        margin-bottom: 8.6rem;
         font-style: normal;
-        font-size: 30px;
-        line-height: 35.16px;
+        font-size: 3rem;
+        line-height: 3.5px;
         font-weight: 700;
         font-family: "Roboto Light", sans-serif;
         color: #3751FE; }
       .section .login__left--heading {
-        margin-left: 40px;
+        margin-left: 4rem;
         text-align: left;
-        padding: 10px;
-        width: 557px;
-        height: 108px; }
+        padding: 1rem;
+        width: 72rem;
+        height: 10.8rem; }
         .section .login__left--heading-primary {
-          margin-bottom: 10px;
+          margin-bottom: 1rem;
           font-weight: 700;
-          font-size: 36px;
+          font-size: 3.6rem;
           line-height: 49.03px;
           font-family: Open Sans, serif;
           font-style: normal;
@@ -56,9 +53,9 @@ html {
           text-align: left; }
       .section .login__left--paragraph {
         font-weight: 400;
-        margin: 10px 50px;
-        padding: 10px 0;
-        font-size: 18px;
+        margin: 1rem 5rem;
+        padding: 1rem 0;
+        font-size: 1.8rem;
         line-height: 21.09px;
         color: black; }
     .section .login__right {
@@ -70,8 +67,8 @@ html {
         left: 0;
         transform: translate(0%, -40%); }
       .section .login__right--img {
-        width: 600px;
-        height: 450px;
+        width: 72rem;
+        height: 45rem;
         object-fit: cover; }
 
 .login-form {
@@ -84,15 +81,14 @@ html {
   border-left: 2px solid #3751FE;
   border-radius: 5px;
   margin-bottom: 2px; }
-  .form__group:hover {
-    margin-bottom: 0; }
 
 .form-input {
-  padding: 10px;
-  margin: 5px;
+  padding: 1rem;
+  margin-bottom: 1rem;
   display: block;
   width: 556px;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  outline: none;
   border: none; }
   .form-input::placeholder {
     width: 171px;
@@ -100,14 +96,16 @@ html {
     margin: 39px 27px;
     font-family: "Roboto Light", sans-serif;
     font-style: normal;
-    font-size: 18px;
-    transition: all .3s; }
+    font-size: 1.8rem; }
   .form-input:focus:invalid {
-    border: none;
-    border-bottom: 5px solid orangered; }
+    border-bottom: 3px solid orangered; }
   .form-input:hover {
-    border: 3px solid #3751FE;
-    margin-bottom: 0; }
+    border: 2px solid #3751FE;
+    outline: none;
+    margin-bottom: 1rem; }
+  .form-input:focus {
+    outline: none;
+    border: none; }
 
 .form__email-section {
   font-size: 20px;
@@ -124,32 +122,33 @@ html {
   line-height: 21.09px;
   cursor: pointer; }
   .form-label-password {
-    visibility: hidden; }
+    display: none; }
 
 .form__forgotten-password {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 10px;
-  margin: 15px; }
+  margin: 15px;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1); }
 
 .form__remember-me {
   display: inline-block;
-  font-size: 18px;
-  width: 118px;
-  height: 21px;
+  font-size: 1.8rem;
+  width: 11.8rem;
+  height: 2.1rem;
   font-weight: 400;
   font-style: normal;
   line-height: 21.09px;
   position: absolute;
   color: #000000;
-  padding: 5px 3px;
-  margin: 0 5px; }
+  padding: .5rem .3rem;
+  margin: 0 .5rem; }
 
 .form__password-reset:active, .form__password-reset:visited, .form__password-reset:link {
-  font-size: 18px;
+  font-size: 1.8rem;
   width: auto;
-  height: 21px;
+  height: 2.1rem;
   font-weight: 400;
   font-style: normal;
   line-height: 21.09px;
@@ -162,46 +161,58 @@ html {
   border-bottom: 3px solid #3751FE; }
 
 .form__btn {
-  margin-top: 40px;
+  margin-top: 4rem;
   display: inline-block; }
   .form__btn--login {
-    padding: 10px 13px;
-    margin-right: 10px;
-    border-radius: 5px;
+    padding: 1rem 1.5rem;
+    margin-right: 1rem;
+    border-radius: .5rem;
     background-color: #3751FE;
     font-style: normal;
     font-family: "Roboto Light", sans-serif;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 21.09px; }
+    font-size: 1.8rem;
+    line-height: 21.09px;
+    border: 1px solid #3751FE;
+    box-shadow: 0 4px 3px rgba(0, 0, 0, 0.25); }
     .form__btn--login:active {
       background-color: #3751FE; }
   .form__btn--sign-up {
-    padding: 10px 5px;
+    padding: 1rem .5rem;
     background-color: #F4F4F4;
-    margin-left: 10px;
-    border-radius: 5px;
+    margin-left: 1rem;
+    border-radius: .5rem;
     font-style: normal;
     font-family: "Roboto Light", sans-serif;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 21.09px; }
+    font-size: 1.8rem;
+    line-height: 21.09px;
+    outline: none;
+    border: 1px solid #3751FE; }
 
 .socials {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 60px 40px; }
-  .socials__btn {
+  margin: 6rem 5rem; }
+  .socials__link {
+    padding: 0 5px;
+    margin: 0 5px;
     text-decoration: none;
-    width: 79px;
-    height: 21px;
+    text-align: center;
+    width: 7.9rem;
+    height: 2.1rem;
     font-family: "Roboto Light", sans-serif;
     font-style: normal;
-    font-size: 14px; }
-    .socials__btn:not(:first-child) {
+    font-size: 1.4rem; }
+    .socials__link:first-child {
+      width: 10rem;
+      text-align: left;
+      color: #000000;
+      padding-bottom: 0; }
+    .socials__link:not(:first-child) {
       color: #3751FE;
-      font-size: 18px;
+      font-size: 1.8rem;
       line-height: 21.09px; }
-      .socials__btn:not(:first-child):hover {
+      .socials__link:not(:first-child):hover {
         border-bottom: 3px solid #3751FE; }

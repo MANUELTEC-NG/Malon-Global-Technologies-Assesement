@@ -1,9 +1,6 @@
 
 .section{
  width: auto;
-
-
-  //background-color: #3751FE;
   margin: 0 auto;
 
 
@@ -11,59 +8,40 @@
     display: grid;
     grid-template-rows: repeat(1, 1fr);
     grid-template-columns:repeat(2, 1fr);
-    width: 1300px;
     margin: 5px auto;
-    //background-color: red;
 
-
-
-
-    &-img{
-      //width: 600px;
-      //height: 400px;
-      //background-color: red;
-      //position: absolute;
-      //top: 30%;
-      //left: 8%;
-      //transform: translate(-50px, -50px);
-      background-color: blue;
-
-    }
 
     &__left{
       color: white;
       background-color: $color-login-bg-left;
-
       margin-left: 5px;
 
 
       &--logo{
         display: inline-block;
-        margin-top: 86px;
-        margin-left: 40px;
-        margin-bottom: 86px;
+        margin-top: 8.6rem;
+        margin-left: 4rem;
+        margin-bottom: 8.6rem;
         font-style: normal;
-        font-size: 30px;
-        line-height: 35.16px;
+        font-size: $header-logo-font-size;
+        line-height: 3.5px;
         font-weight: 700;
         font-family: "Roboto Light", sans-serif;
-        //width: 87px;
-        //height: 35px;
         color: $color-heading-primary;
       }
 
       &--heading{
-        margin-left: 40px;
+        margin-left: 4rem;
         text-align: left;
-        padding: 10px;
-        width: 557px;
-        height: 108px;
+        padding: 1rem;
+        width: $width / 2;
+        height: 10.8rem;
 
 
         &-primary{
-          margin-bottom: 10px;
+          margin-bottom: 1rem;
           font-weight: 700;
-          font-size: 36px;
+          font-size: $heading-primary-font-size;
           line-height: 49.03px;
           font-family: Open Sans, serif;
           font-style: normal;
@@ -79,9 +57,9 @@
         //width: 362px;
         //height: 21px;
         font-weight: 400;
-        margin: 10px 50px;
-        padding: 10px 0;
-        font-size: 18px;
+        margin: 1rem 5rem;
+        padding: 1rem 0;
+        font-size: 1.8rem;
         line-height: 21.09px;
         color: black;
 
@@ -104,8 +82,8 @@
       }
 
       &--img{
-        width: 600px;
-        height: 450px;
+        width: $width /2;
+        height: 45rem;
         object-fit: cover;
       }
 
