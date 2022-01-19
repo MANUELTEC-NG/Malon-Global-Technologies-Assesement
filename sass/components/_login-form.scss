@@ -11,9 +11,12 @@
     border-radius: 5px;
     margin-bottom: 2px;
 
+  @include respond(phone){
+    width: 100%;
+  }
 
   }
-  &-input{
+  &__input{
     padding: 1rem;
     margin-bottom: 1rem;
     display: block;
@@ -22,6 +25,10 @@
     outline: none;
     border: none;
 
+    @include respond(phone){
+      width: 100%;
+    }
+
     &::placeholder{
       width: 171px;
       height: 21px;
@@ -29,6 +36,10 @@
       font-family: "Roboto Light", sans-serif;
       font-style: normal;
       font-size: 1.8rem;
+
+      @include respond(phone){
+        //width: 50vw;
+      }
 
 
 
@@ -60,7 +71,7 @@
     color: $color-heading-primary;
   }
 
-  &-label{
+  &__label{
     color: #000000;
     font-family: "Roboto Light", sans-serif ;
     font-weight: 400;
@@ -77,11 +88,24 @@
 
   &__forgotten-password{
     display: flex;
-    flex-direction: row;
+    flex-flow: row nowrap;
     justify-content: space-between;
     padding: 10px;
     margin: 15px;
     box-shadow: 0 1rem 2rem rgba(black, .1);
+    @include respond(phone){
+      width: 100%;
+      flex-flow: row wrap;
+     justify-content: space-between;
+      margin: 0;
+      font-size: 55%;
+    }
+  }
+  &__save{
+    &-info-toggle {
+      margin-top: .5rem;
+      margin-right: 1rem;
+    }
   }
 
   &__remember-me{
@@ -96,6 +120,13 @@
     color: #000000;
     padding: .5rem .3rem;
     margin: 0 .5rem;
+
+    @include respond(phone){
+      font-size: 1.2rem;
+      width: 50%;
+      margin-left: 1.5rem;
+      padding: .3rem;
+    }
 
 
 
@@ -113,6 +144,10 @@
       text-transform: capitalize;
       text-decoration: none;
 
+      @include respond(phone){
+        width: 50%;
+        font-size: 1.2rem;
+      }
 
     }
 

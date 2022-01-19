@@ -7,10 +7,7 @@
 </head>
 <body>
 <main class = "main">
-
-    <div class="section">
-
-        <div class="login ">
+        <div class="login">
 
             <div class="login__left">
 
@@ -25,8 +22,8 @@
                     <h1 class="login__left--heading-primary">
                         <span>Result For The Travel Industry </span>
                     </h1>
-
                 </div>
+
                 <p class="login__left--paragraph">Welcome Back! Please Login to your Account</p>
 
                 <div class="login-form">
@@ -34,27 +31,26 @@
                             <span class="form__email-section">Email Section</span>
                             <div class="form__group">
                                 <label for="email" class="form-label">Email Address</label>
-                                <input type="email" class="form-input" id="email" placeholder="Email Address">
+                                <input type="email" class="form__input" id="email" placeholder="Email Address">
                             </div>
 
                             <div class="form__group">
-                                <label for="password" class="form-label form-label-password">Password</label>
-                                <input type="password" class="form-input " id="password" placeholder="Password">
-
+                                <label for="password" class="form__label form-label-password">Password</label>
+                                <input type="password" class="form__input " id="password" placeholder="Password">
                             </div>
 
                             <div class="form__forgotten-password">
-                                <span>
-                                    <input type="checkbox" class="" id="remember"><label for="remember" class="form__remember-me"> Remember Me</label>
-                                </span>
+                                <div class="form__save">
+                                    <label for="remember" class="form__remember-me"> Remember me</label>
+                                    <input type="checkbox" class="form__save-info-toggle" id="remember">
 
+                                </div>
                                 <a href="#" class="form__password-reset">Forgotten Password?</a>
                             </div>
 
                             <div class="form__btn">
                                 <button class="form__btn--login">Login</button>
                                 <button class="form__btn--sign-up">Sign Up</button>
-
                             </div>
 
                         </form>
@@ -69,17 +65,13 @@
                 </div>
             </div>
 
-
-
-
-            <div class="login__right " >
+            <div class="login__right" >
                 <div class="login__right--container">
                     <img src="./assets/img/man-on-bicycle.png" alt="image" class="login__right--img">
                 </div>
 
             </div>
         </div>
-    </div>
 </main>
 </body>
 </html>
